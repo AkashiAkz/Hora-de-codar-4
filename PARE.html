@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let estudantes = [];
+        let nome;
+
+        while (true) {
+            nome = prompt("Digite o nome do estudante (ou 'PARE' para encerrar):");
+
+            if (nome.toUpperCase() === "PARE") {
+                break;
+            }
+
+            estudantes.push(nome);
+        }
+
+        document.write(`Quantidade de estudantes cadastrados: ${estudantes.length} `);
+        document.write("Lista de estudantes cadastrados: ");
+        estudantes.forEach((estudante, index) => {
+            document.write(` ${index + 1}. ${estudante} `);
+        });
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
